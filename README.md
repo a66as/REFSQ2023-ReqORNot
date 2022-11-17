@@ -3,7 +3,7 @@ This repository contains the replication package for the paper "Requirement or n
 Please cite the original paper.
 
 # Tool
-The best model---BERT base uncased---trained on the public dataset is deployed [here](https://www.smartdelta.com).
+The best model---BERT base uncased---trained on the public dataset is deployed [here](https://www.smartdelta.org).
 
 # Replication Package
 Will add details and instructions here.
