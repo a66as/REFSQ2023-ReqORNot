@@ -1,6 +1,6 @@
-# To be updated by Nov 23, 2022
+# Requirement or not, that is the question!
 This repository contains the replication package for the paper "Requirement or not, that is the question: A case from the railway industry".
-Please cite the original paper.
+Please cite the original paper. (Expected updates on Nov 23, 2022)
 
 ## Tool
 The best model---BERT base uncased---trained on the public dataset is deployed [here](https://www.smartdelta.org).
