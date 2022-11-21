@@ -8,8 +8,5 @@ The best model---BERT base uncased---trained on the public dataset is deployed [
 ## Replication Package
 `REFSQ23_results.xlsx` contains the obtained results of our experiments.
 
-## License
-Check the dronology license and fill this out accordingly.
-
 ## Funding
 This work is partially funded by the [AIDOaRt (KDT)](https://sites.mdu.se/aidoart) and [SmartDelta (ITEA)](https://itea4.org/project/smartdelta.html) projects.
