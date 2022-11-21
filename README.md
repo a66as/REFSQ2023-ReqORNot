@@ -6,7 +6,7 @@ Please cite the original paper.
 The best model---BERT base uncased---trained on the public dataset is deployed [here](https://www.smartdelta.org).
 
 ## Replication Package
-Will add details and instructions here.
+`REFSQ23_results.xlsx` contains the obtained results of our experiments.
 
 ## License
 Check the dronology license and fill this out accordingly.
