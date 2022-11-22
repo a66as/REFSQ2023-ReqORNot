@@ -16,3 +16,5 @@ The best model---BERT base uncased---trained on the public dataset is deployed [
 
 ## Funding
 This work is partially funded by the [AIDOaRt (KDT)](https://sites.mdu.se/aidoart) and [SmartDelta (ITEA)](https://itea4.org/project/smartdelta.html) projects.
+![SmartDelta](https://smartdelta.org/wp-content/uploads/2021/12/1500x500_170x60.jpeg)
+![SmartDelta](https://sites.mdu.se/images/18.53e5afc518094948a11572ed/1622585177018/Logga%20AIDOaRt.jpg)
