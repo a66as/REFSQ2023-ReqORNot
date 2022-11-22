@@ -13,7 +13,7 @@ Please cite the original paper. (Expected updates: Nov 23, 2022)
 
 ## How to run?
 1. Clone the repository
-2. Download (from [here]() and [here](https://doi.org/10.5281/zenodo.7347716)) and unzip the additional material  in the `models` directory
+2. Download (from [here](https://doi.org/10.5281/zenodo.7347259) and [here](https://doi.org/10.5281/zenodo.7347716)) and unzip the additional material  in the `models` directory
 3. Create a virtual environment with Python `3.8.10` and install the `requirements.txt` using `pip install -r requirements.txt`
 4. Run the Jupyter Notebook `RorNot_Pipelines.ipynb`
 
