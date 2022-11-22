@@ -3,7 +3,7 @@ This repository contains the replication package for the paper "Requirement or n
 Please cite the original paper. (Expected updates on Nov 23, 2022)
 
 ## Tool
-The best model---BERT base uncased---trained on the public dataset is deployed [here](https://www.smartdelta.org/rornot). (Tool to be available after our AWS account gets verified. Veriffication expected on Nov 30, 2022)
+The best model---BERT base uncased---trained on the public dataset is deployed [here](https://www.smartdelta.org/rornot). (Tool to be available after our AWS account gets verified. Verification expected on Nov 30, 2022)
 
 ## Replication Package
 - [REFSQ23_results.xlsx](/REFSQ23_results.xlsx) contains the obtained results of our experiments.
