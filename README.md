@@ -3,13 +3,13 @@ This repository contains the replication package for the paper "Requirement or n
 Please cite the original paper. (Expected updates on Nov 23, 2022)
 
 ## Tool
-The best model---BERT base uncased---trained on the public dataset is deployed [here](https://www.smartdelta.org).
+The best model---BERT base uncased---trained on the public dataset is deployed [here](https://www.smartdelta.org/rornot). (Tool to be available after our AWS account gets verified. Veriffication expected on Nov 30, 2022)
 
 ## Replication Package
 - [REFSQ23_results.xlsx](/REFSQ23_results.xlsx) contains the obtained results of our experiments.
 - [models](/models) directory should contains all the trained ML models on five folds (both on data with and without pre-processing) of the [Dronology Dataset](http://sarec.nd.edu/dronology/datasets/01/). The instructions to download the models are in the following section.
 - [dronology.csv](/dronology.csv) contains the original Dronology dataset in CSV formate. IDs starting with `RE` are considered as requirements and all other entries are considered as non-requirements.
-- [data](/data) contains the generated stratified five folds from the original Dronology dataset both with and witout pre-processing. These folds are used for cross-validation.
+- [data](/data) contains the generated stratified five folds from the original Dronology dataset both with and without pre-processing. These folds are used for cross-validation of all the pipelines.
 
 ## How to run?
 1. Clone the repository and download the....
