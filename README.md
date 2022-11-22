@@ -6,7 +6,7 @@ Please cite the original paper. (Expected updates on Nov 23, 2022)
 The best model---BERT base uncased---trained on the public dataset is deployed [here](https://www.smartdelta.org).
 
 ## Replication Package
-`REFSQ23_results.xlsx` contains the obtained results of our experiments.
+`[REFSQ23_results.xlsx](/REFSQ23_results.xlsx)` contains the obtained results of our experiments.
 
 ## Funding
 This work is partially funded by the [AIDOaRt (KDT)](https://sites.mdu.se/aidoart) and [SmartDelta (ITEA)](https://itea4.org/project/smartdelta.html) projects.
