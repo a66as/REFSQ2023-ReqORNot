@@ -1,0 +1,76 @@
+issueid,STR.REQ,class
+RE-714,The GCSMiddleware shall follow a predefined set of steps to establish a connection between a GCS and Dronology,1
+RE-706,The DronologyRuntimeMonitor shall be able to receive messages from any Dronology component,1
+RE-695,The RealTimeFlightUI shall allow users to follow one or multiple UAVs on the map,1
+RE-693,The RealTimeFlightUI shall allow users to perform emergency operations e g hovering multiple UAVs sending multiple UAVs to home to a group of UAVs,1
+RE-679,When the RouteCreationUI is loaded a list of all existing routes shall be displayed,1
+RE-677,The RouteCreationUI shall allow a user to delete a route,1
+RE-672,The RouteCreationUI shall allow the user to create and modify a route,1
+RE-659,When a user shall cancels a pending flight plan the RouteAssignmentUI shall notify Dronology,1
+RE-651,When requested by the user the RouteAssignmentUI shall display details about the selected UAV and its flight plans,1
+RE-642,When the VaadinUI is activated the VaadinUI shall be configured according to stored configuration parameters,1
+RE-597,The InternalSimulator shall approximate the state of the battery,1
+RE-593,The InternalSimulator shall approximate the behavior of a UAV,1
+RE-592,The UAVRegistrationManager shall store UAV meta data information such as the UAV s technical characteristics,1
+RE-576,The VehicleCore shall support virtual UAVs,1
+RE-574,The VehicleCore shall support UAVs connected via the GCS,1
+RE-545,When requested if a mission is currently active the MissionPlanner shall cancel the active mission,1
+RE-541,The MissionPlanner shall manage predefined FlightPatterns,1
+RE-531,When a flight plan is activated for a UAV currently on the ground the FlightSchedulingandExecution shall notify the UAV to takeoff vertically until it reaches the prescribed altitude,1
+RE-510,When requested the CoordinateSystem shall transform coordinates to alternate formats,1
+RE-112,If a command is issued by the VaadinUI for an UAV the VaadinUI shall request control of that UAV,1
+DD-764,The UIMiddleware accepts resend waypoint commands associated with a unique UAV ID and forwards to Dronology,0
+DD-763,UAV State messages shall be formatted as JSON objects and contain the UAV ID and the MODE,0
+DD-755,The GCS requests the UAV s properties every UAV MESSAGE MONITORING FREQUENCY seconds,0
+DD-752,The GCS requests the UAV s current coordinates every UAV MESSAGE STATE FREQUENCY seconds,0
+DD-740,The GCS shall transform commands into a vehicle specific format,0
+DD-737,When a socket error or time out occurs all UAVs associated with the GCS shall be deactivated,0
+DD-732,The GOTO WAYPOINT command shall include a target latitude longitude and altitude coordinate,0
+DD-731,Each movement command shall specify one of the following command types GOTO WAYPOINT SET GROUNDSPEED SET VELOCITY TAKEOFF LAND HOVER,0
+DD-730,Each command shall include a unique UAV ID,0
+DD-728,The GCSMiddleware shall be able to handle and send a setStateFrequency command to the respective GCS containing the desired Frequency in ms,0
+DD-724,UAV State messages shall be formatted as JSON objects and contain both mandatory and optional elements,0
+DD-723,UAV Monitoring messages shall be formatted as JSON objects and contain arbitrary information regarding a single UAV,0
+DD-715,In step two the GCSMiddleware accepts the connection and sends a handshake message,0
+DD-704,Topics shall be organized in a hierarchical manner meaning that clients can subscribe to all messages messages from certain GCS UAVS and properties,0
+DD-697,When UI follow mode is active the map should continually zoom and pan so that all selected UAVs are centered and their active routes constitutes of the view,0
+DD-686,Different types of UAVs shall have different icons,0
+DD-684,When the RealTimeFlightUI is loaded a map shall be displayed with the default zoom level and center coordinates specified in a configuration file,0
+DD-682,Upon loading the UI shall request information about all activated UAVs from the UIMiddleware Once the UIMiddleware respond to the request the UI shall display a list of all currently activated UAVs,0
+DD-671,The route information shall be represented using the Standard Route XML format and transmitted to the UIMiddleware,0
+DD-667,The altitude and speed values shall not exceed the current maximum UAV MAX ALTITUDE UAV MAX GROUND SPEED set in the system,0
+DD-647,The user shall select a UAV and then assign routes to it from an available route list,0
+CO-645,Provides capabilities for selecting existing routes and assigning them to active UAVs,0
+DD-624,The UIMiddleware shall monitor liveness of clients holding control locks on individual UAVs,0
+DD-608,When given a land command the NVECSimulator shall immediately change the UAV s current altitude to the ground altitude,0
+DD-606,When given a goto command the NVECSimulator shall compute the next coordinate based upon the normal vector and altitude of the current position and the normal vector and altitude of the destination The simulator shall move the UAV with infinite acceleration and use numerical methods to hone in on the next coordinate which will be SIMULATION STEP SIZE meters from the current position along the travel path,0
+CO-598,Provides basic capabilities for simulating the flight of Virtual UAVs,0
+DD-586,If the presented UAV ID represents a currently registered UAV then the UAVActivationManager shall activate the UAV,0
+DD-569,If an obstacle is detected within a distance of MIN STOPPING DISTANCE the ObjectAvoidance system shall issue a hover in place command,0
+DD-566,The ObjectAvoidance system shall retrieve the state of the UAVs onboard ObjectAvoidance status,0
+DD-557,Each UAV can only store one currently executing flight plan ID,0
+DD-535,If a UAV is in the air when a flight plan is assigned the takeoff altitude in the flight plan is ignored,0
+DD-532,When the takeoff command is issued the FlightSchedulingAndExecution checks for a pre specified altitude in the flight plan,0
+DD-509,The flight route xml format includes an optional takeoff altitude tag,0
+DD-507,When the UIMiddleware requests a flight route identified by its unique name the FlighRouteManager shall retrieve the associated file,0
+DD-498,When a UAV is executing flight plans and reaches a synchronization point which is followed by a delay task it shall wait to proceed until the delay specified in seconds is expired,0
+CO-484,Simple collision avoidance implementation that stops UAVs when they violate a minimum safety distance,0
+CO-475,Provides capabilities for executing flights assigned to a UAV,0
+DD-439,The open street map component shall support multiple map providers,0
+DD-354,The GCSMiddleware shall handle multiple GCS at the same time,0
+DD-229,The UI shall display the waypoints and their connections,0
+DD-177,Position reckoning shall utilize the WGS reference system,0
+DD-122,Configuration parameters including map coordinates scale map style and color scheme shall be stored in a JSON Object on the server,0
+DD-119,Unless otherwise configured in the configuration parameters the map shall be centered at White Field University of Notre Dame South Bend IN,0
+DD-75,Flight routes shall be created externally and uploaded to Dronology via the UI middleware,0
+DD-33,When a UAV is in FLYING state and has no currently executing flight plan it transitions to IN AIR,0
+DD-30,When a flight plan is assigned to a UAV in the ON GROUND state it transitions to the AWAITING TAKEOFF CLEARANCE state,0
+DD-24,Altitude shall be specified in meters,0
+DD-23,All waypoints shall be specified using degrees longitude and latitude using Decimal Degrees format e g,0
+ST-280,When the UI is loaded automatically move the map so that all registered UAVs and their planned routes or rather the rectangle that bounds all UAVs and their planned routes are visible in the center of the map also zoom the map so that all registered UAVs and their planned paths constitutes about of the map,0
+ST-349,LMap already manages all pins and polylines on the map We should not manage them again Get rid of private List LPolyline polylines new ArrayList and private List LMarker pins new ArrayList Instead use map getComponentIterator to retrieve the pins and polylines,0
+ST-199,Put the table view below the map for now This table should be synced with the map when either the table or the route on the map changed,0
+ST-308,Hide the id and reached columns Add a column called which simply displays the order of the waypoint,0
+ST-227,Add a trashcan button to the right of each row in the table Clicking on the button will pop up a window showing Are you sure you want to delete this waypoint and two buttons Yes and No When the user clicks on No window closes and nothing happens When the user clicks on Yes remove the waypoint on that row from the table and remove that waypoint on the map then close the window,0
+ST-200,Add a CostomComponent above the map to show the following info of the selected route see the mockup for the layout the name of the route the number of waypoints it has an edit button to activate editing a delete button do not do anything for now a checkbox saying Table View When the checkbox is checked show the table grid view below the map If no route is selected show No route is selected in the name area and disable all controls,0
+ST-180,An N vector is a normal Vector that points out from the surface of the WGS reference ellipsoid The normal vector is combined with an altitude which represents the distance above or below the reference ellipsoid note this is the distance above sea level as sea level is defined as the surface of the ellipsoid in WGS The n vector and altitude together precisely define a position on Earth The n vector should be a unit vector i e a vector with a magnitude The altitude should be in meters Why we need this In dead reckoning calculations we need to take a position and add a velocity vector to it Drones often stay at constant elevations as they travel around the Earth This is a problem when using p vectors and velocity vectors The instantaneous velocity is tangent to the reference ellipsoid and thus follows the curvature of the Earth In aviation it is common to use n vectors because there is a nice formula that addresses this exact problem This also makes programming easier when considering edge cases like a drone flying east near the meridian where longitude degrees Using latitude and longitude for this calculation requires special logic to handle the transition to longitude degrees but no special logic is required when using n vectors N vectors also handle gracefully the poles where longitude is undefined For more information about n vectors see this article The following instance fields are needed in the nvector class x the x component of the n vector y the y component of the n vector z the z component of the n vector altitude the distance above sea level in meters The following methods are needed in the n vector class toLla takes no arguments and maps the n vector and altitude to a latitude longitude and altitude toPvec takes no arguments and maps the n vector and altitude to an X Y and Z coordinate in the WGS reference frame,0

@@ -1,0 +1,77 @@
+issueid,STR.REQ,class
+RE-754,The GCS shall transmit the UAV s properties to the GCSMiddleware,1
+RE-739,When the GCS receives a UAV command from the GCSMiddleware the GCS shall forward the command to the respective UAV,1
+RE-709,The GCSMiddleware shall handle multiple GCS,1
+RE-698,The RealTimeFlightUI shall notify users when an emergency occurs,1
+RE-668,Each route shall include a unique ID a textual description and a set of waypoints all of which are editable in the UI,1
+RE-664,The RouteCreationUI shall distinguish between starting ending and intermediate waypoint markers,1
+RE-655,When a UAV is selected the RouteAssignmentUI shall display its active flight plans,1
+RE-643,When loading the map view it shall be positioned at the pre defined location,1
+RE-637,The UIMiddleware shall enable an existing route to be assigned to an active UAV,1
+RE-634,The UIMiddleware shall enable the creation and modification of flight routes,1
+RE-595,When given a goto command the InternalSimulator shall update the location of the UAV at increments of SIMULATION STEP SIZE meters moving it towards the target destination until the destination is reached,1
+RE-589,When the maximum numbers of allowed activated UAVs has been reached the UAVActivationManager shall reject any further activation requests,1
+RE-563,When a group of UAVs are assigned flight patterns as part of a mission the system shall provide a warning if any paths overlap,1
+RE-551,If a scheduled flight is not manually assigned to a UAV the SingleUAVFlightPlanScheduler shall assign the route automatically to an UAV,1
+RE-508,When a flight route requires a customized takeoff altitude that differs from the system s default takeoff altitude it shall be specified in the flight route,1
+RE-126,The ObjectAvoidance system only issues commands within the capabilities of the UAV,1
+RE-125,If a UAV takes evasive actions the system will ensure that it will eventually reach its destination,1
+RE-114,When the RealTimeFlightUI is loaded a map shall be displayed,1
+RE-110,The UIMiddleware shall only assign one control client at a time for each UAV,1
+RE-8,When requested the VehicleCore shall shall transition the UAV between states according to allowed state transitions as depicted in the UAV state transition diagram,1
+DD-760,The active flight plan shall be displayed at the top of the list of pending flight plans,0
+DD-753,The GCS shall send the UAV s current coordinates to the GCSMiddleware when they are received from the UAV,0
+DD-742,The default message frequency for UAV monitoring messages shall be UAV MESSAGE MON FREQUENCY,0
+DD-719,The GCS shall be informed of the result of the activation request,0
+DD-705,The DronologyRuntimeMonitor shall provide means to define wildcards i e a client receives messages from all topics associated with the wildcard,0
+DD-703,Clients shall be able to subscribe to any number of topics,0
+CO-700,Provides basic data collection capabilities for internal data from Dronology such as assigned flights and data provided by the UAV e g location data and status,0
+DD-694,When requested by the user the UI shall apply the requested emergency action to all selected UAVs if no UAV is selected the UI shall apply the emergency action to all UAVs by default,0
+DD-676,When selected by the user multiple routes shall be displayed simultaneously on the map,0
+DD-674,The RouteCreationUI shall support route creation and modification in visual mode allowing the user to click on a location in order to create modify or delete a waypoint,0
+CO-663,Provides capabilities for creating new flight routes on a map that are stored in Dronology,0
+DD-660,Each UAV shall have a cancel pending flight plan button associated with it,0
+DD-654,When the user requests to view flight plans assigned to a UAV the UI requests the pending flight plans from the UAV FlightInfo object and displays them,0
+DD-650,When route assignments are removed from a UAV a request shall be sent to the UIMiddleware to remove the assignment in Dronology,0
+DD-636,When requested by a UI client the UIMiddleware shall support the modification of an existing flight route with an given ID,0
+DD-635,When requested by a UI client the UIMiddleware shall create a new flight route with a unique ID,0
+DD-633,The UIMiddleware accepts return to home commands associated with a unique UAV ID and forwards to Dronology,0
+DD-632,The UIMiddleware accepts takeoff commands associated with a unique UAV ID and forwards to Dronology,0
+DD-618,Each connection request handshake and mode change message shall be logged,0
+DD-609,When a simulated UAV is in flight the NVECSimulator shall reduce the battery every second by SIMULATOR BATTERY DRAIN VOLTS,0
+DD-607,While responding to a goto command the NVECSimulator shall continue moving in steps towards the target coordinates until the target has been reached,0
+DD-603,When a simulated UAV is in flight the InternalSimulator shall reduce the battery every second by SIMULATOR BATTERY DRAIN VOLTS,0
+DD-601,While responding to a goto command the InternalSimulator shall continue moving in steps towards the target coordinates until the target has been reached,0
+DD-585,If the presented UAV ID does not represent a currently registered UAV then the UAVActivationManager will reject the activation and notify the GCS Middleware,0
+DD-580,When a UAV is in LANDING state and reaches zero altitude it transitions to ON GROUND,0
+DD-575,The VehicleCore shall support UAVs capable of receiving and responding to commands sent via the ground control station,0
+DD-564,When a UAV which has been receiving evasive directives is no longer in close proximity to an object the ObjectAvoidance system shall stop sending directives and the UAV will continue towards its destination,0
+DD-560,An aborted flight plan shall not be reassigned to any UAV,0
+DD-556,The currently executing flight plan ID is associated with the UAV executing it,0
+DD-543,The FlightPattern for synchronized takeoff shall direct each UAV to takeoff to a unique altitude synchronize with other UAVs fly at the unique altitude to the longitude and latitude of the first waypoint of the subsequent route synchronize with other UAVs descend or ascend to the target waypoint and synchronize with other UAVs to complete the flight pattern,0
+DD-542,When a predefined FlightPattern is included in a MissionPlan it shall be expanded prior to use into a set of waypoints and synchronization points for each of the participating UAVs,0
+DD-540,The MissionPlan shall be specified as a JSON file see attached example,0
+DD-534,If no takeoff altitude is prescribed in the flight plan assigned to a UAV currently on the ground then the system wide default altitude is used as the target takeoff altitude,0
+DD-533,If a takeoff altitude is prescribed in the flight plan assigned to a UAV currently on the ground then that altitude is used as the target takeoff altitude,0
+DD-530,When the UAV reaches a target waypoint if additional waypoints are specified in the flight plan then the VehicleCore shall send the next waypoint to the UAV s GCS,0
+DD-519,Direction between two coordinates shall be specified using a velocity vector from the first coordinate,0
+DD-511,The default coordinate representation shall use LLA longitude latitude altitude format,0
+DD-504,Upon receipt of a new or modified flight route from the UI middleware the FlightRouteManager shall check that it is a VALID FLIGHT ROUTE i e that all waypoints are valid coordinates and that the flight route contains at least one waypoint,0
+CO-481,Collision Avoidance API and general services,0
+DD-445,The DronologyRuntimeMonitor shall allow to publish arbitrary monitoring messages and subscribe to certain message types,0
+DD-421,Waypoints in a flight route shall be colored so as to differentiate between the starting waypoint ending waypoint and all remaining intermediate waypoints,0
+CO-105,Manages all aspects of displaying flights and UAVs in real time and interacting with them The flight view displays active routes UAV coordinates and their current health The map uses zoom and panning features to follow one or more selected UAV,0
+DD-104,All flight plans executed and waypoints reached shall be logged to a dedicated flight log file,0
+DD-85,The pending flight plans of a UAV may be reordered,0
+DD-19,A client shall register with the UIMiddleware to receive notifications whenever a new UAV type configuration is created modified or deleted,0
+ST-208,Create the emergency operation buttons specified in the mockup,0
+ST-305,Connect the Return to home button for each UAV to Dronology When the button is clicked popup a modal window saying Are you sure to send UAV name to its home with two buttons Yes and No Clicking Yes will send the UAV to home Clicking No will simply close the window For the Emergency Operations When no UAV is selected clicking All UAVs Return to Home will popup a modal window saying Are you sure to send all UAVs to their homes clicking Yes will send all UAVs to home When there are selected UAVs change the text of the button to Selected UAVs Return to Home clicking it will popup a modal window saying Are you sure to send UAV name UAV name and UAV name n to their homes send the selected UAVs to their homes when the user clicked Yes,0
+ST-346,When the delete button in bar on top of the route map is clicked popup a modal window saying Are you sure to delete the route route name including two buttons Yes and No When clicked Yes remove the route in dronology close the window and update the UI When clicked No simply close the window When in edit mode the route can still be deleted Remember to exit the edit mode before deleting the route,0
+ST-169,Upon user request a new empty flight route is created When the Add a New Route button is clicked a modal window pops up and asks users to input the name for the new route Two buttons are displayed on the window Cancel to cancel adding the route Draw Route to add a new route auto select the route and enter the Editing Mode,0
+ST-175,When an existing waypoint is selected on the map it can be dragged to another location,0
+ST-174,A waypoint can be removed from the route If the waypoint is the last in the list of waypoints the previous waypoint becomes the final waypoint If the waypoint is the first in the list of waypoints the next waypoint becomes the starting waypoint If the waypoint is not the last in the list of waypoints the previous waypoint will be connected with the next waypoint,0
+ST-246,When Assign New Route button is clicked show a modal window that occupies of the screen In the window show the FRMainLayout and two buttons beneath the FRMainLayout Cancel and Apply Clicking Cancel the user will be sent back to the active flights view When no route is selected the Apply button is disabled Once a route is selected enable the Apply button Clicking the Apply button will popup another modal window confirmation window saying Are you sure you want UAV name to follow the route route name Clicking Yes will assign the route to the UAV and close the modal windows Clicking No the user will be sent back to the route planning modal window,0
+ST-228,When a route is clicked from the list change its background on the list to indicate that it is selected and then load its waypoints into the map and the table,0
+ST-262,Replace existing Coordinate implementation with new LlaCoordinate This requires updating the flight simulator to work with double values instead of long UI adaptations to display coordinates correctly additional functionality to modify waypoints LlaCoordinate is now immutable,0
+ST-259,Latitude needs to be calculated using atan See equation in,0
+ST-178,We need an immutable class holding three doubles for latitude longitude and altitude LLA This class should have the following data members latitude the angle north of the equator in degrees negative angles define latitudes in the southern hemisphere longitude the angle east of the prime meridian in degrees negative angles define longitudes in the western hemisphere altitude the distance above sea level or more precisely the distance above the surface of the WGS reference ellipsoid For this project we need this distance in meters though traditionally in aviation this distance is measured in feet so be careful when using this class This class should have the following methods toPvec takes no arguments and maps LLA to an X Y and Z coordinate in the WGS reference frame toNvec takes no arguments and maps LLA to a coordinate defined by an N vector plus altitude An N vector is a normal vector on the surface of the WGS reference ellipsoid This ellipsoid defines the position of sea level everywhere on Earth By pairing this with an altitude we can precisely define a position N vectors have nice properties that make dead reckoning easier and more accurate Dead reckoning is the process of calculating a drones current position by using a previously determined position and advancing that position based upon known or estimated speeds over elapsed time and course See for more info To learn more about the nice properties that n vectors have see this article from The Journal of Navigation Perhaps Coordinate java may be modified into the LlaCoordinate class we need,0

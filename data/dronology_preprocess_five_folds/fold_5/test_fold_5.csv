@@ -1,0 +1,76 @@
+issueid,STR.REQ,class
+RE-766,mapcomponent support different type map layer e g terrain satellite,1
+RE-759,missionplanner execute flight plan multiple uavs concurrently,1
+RE-751,gcs transmit uav s current location gcsmiddleware,1
+RE-736,connection gcs gcsmiddleware lose gcsmiddleware notify dronology deactivate associate uavs,1
+RE-729,gcsmiddleware forward command send dronology gcs,1
+RE-722,gcsmiddleware handle state message monitor message mode change message receive gcs,1
+RE-691,realtimeflightui allow user apply flight operation select uavs,1
+RE-666,routecreationui accept valid altitude speed value waypoint,1
+RE-656,user reorder route remove flight plan assign uav long flight start execution,1
+RE-630,uimiddleware accept command uis forward dronology,1
+RE-628,uimiddleware provide list exist route,1
+RE-611,activitylogger log flight plan relate event,1
+RE-596,give landing command internalsimulator uav ground altitude correspond current longitude latitude,1
+RE-594,give takeoff command internalsimulator uav takeoff altitude correspond current longitude latitude,1
+RE-562,flight pattern document longitude latitude altitude waypoint flight route offset starting position uav,1
+RE-525,flight plan active hover place command rescind flightmanager notify uav continue originally designate waypoint,1
+RE-516,give coordinate coordinatesystem compute distance,1
+RE-424,return home command issue flightmanager return uav original launch location issue additional waypoint route command,1
+RE-160,gcs request activation newly detect uav gcsmiddleware forward request dronology,1
+DD-768,movement command specify follow command type set monitoring frequency set state frequency,0
+DD-767,routecreationui provide capability modify exist route,0
+DD-757,property gcs send gcsmiddleware define json,0
+DD-756,gcs send uav s current property gcsmiddleware receive uav,0
+DD-749,connection uav lose gcs fail reconnect gcs notify gcsmiddleware,0
+DD-745,gcs receive set frequency command gcsmiddleware adjust messange frequency accordingly,0
+DD-734,set velocity specify velocity vector specify ned north east direction,0
+DD-733,set groundspeed command specify ground speed meter second,0
+DD-721,activation request deny gcsmiddleware send predefined activation deny message gcs,0
+DD-720,activation request approve gcsmiddleware send predefined activation confirmation message gcs,0
+DD-718,gcsmiddleware uavactivationmanager request uav activation,0
+DD-711,gcsmiddleware accept connection multiple gcs,0
+DD-696,ui follow mode initiate map automatically zoom pan select uavs center active route constitute view,0
+DD-690,ui differentiate complete current traverse flight segment,0
+DD-683,ui periodically request list activate uavs uimiddleware update display currently activate uavs,0
+DD-669,ui provide respective field display modify d textual description waypoint route information,0
+DD-658,flight plan assign uav execute delete select route click deselect button,0
+CO-641,user interface manage uavs route planning flight,0
+DD-640,uimiddleware forward mission plan request dronology,0
+DD-638,uimiddleware assign list waypoint route active uav order create flight plan,0
+DD-631,uimiddleware accept hover place command associate unique uav d forward dronology,0
+CO-620,provide capability connect multiple gcs send command receive message uavs,0
+DD-615,timestamp type action log mission log flight plan relate event include time scheduling time execution time complete plan reorder plan cancel plan,0
+DD-588,uav deactivate schedule flight plan remove uav s flightplan pool,0
+DD-578,uav air state assign flight plan execute transition fly,0
+DD-577,support internally simulate uavs,0
+DD-568,objectavoidance compute pair wise distance uavs,0
+DD-567,objectavoidance maintain list uav state,0
+DD-552,flight plan assign specific uav flight plan scheduler automatically assign available uav,0
+DD-548,flight route schedule execution waypoint takeoff altitude identifier instantiate new flight plan,0
+DD-546,request user currently execute mission plan cancel remove pende flight plan remove synchronization point,0
+DD-544,flightpattern synchronize landing direct uav synchronize final waypoint precede route ascend descend unique altitude synchronize fly longitude latitude home coordinate synchronize descend landing altitude,0
+DD-522,uav command hover place state change hover place command send gcs,0
+DD-518,distance compute coordinate accurate meter distance meter,0
+DD-512,request coordinatesystem transform coordinate transform default representation n vector,0
+CO-473,provide dimensional coordinate currently base longitude latitude altitude provide conversion coordinate system,0
+DD-361,step gcs announce gcsmiddleware provide unique d,0
+DD-168,load ui request exist route uimiddleware uimiddleware respond request ui display exist route,0
+DD-113,state battery level speed current coordinate uav display,0
+CO-90,handle connection dronology ground control station gcs forwards command monitoring message dronology register gcs pass message describe state uavs manage gcs dronology,0
+DD-87,flight plan unassigne uav remove uav s flight plan queue,0
+DD-81,flight plan queue uav reach final waypoint current flight plan state set air,0
+DD-31,permission grant uav await takeoff clearance state transition take state,0
+DD-27,uav zero pende flight plan,0
+ST-210,use enablerouteedite disablerouteedite method maprouteutility class edit button click map table enter edit mode thick border show map table indicate edit mode mockup button add map table area save cancel edit mode user create new waypoint waypoint remove waypoint etc edit mode activate disable editing functionality click save button send current waypoint datum dronology exit edit mode click cancel button undo change fetch datum dronology exit edit mode,0
+ST-358,follow mode select new uavs add group uavs currently follow unselecting uavs remove group update indicator bar accordingly uav unselecte zoom uavs e perform function uavs map,0
+ST-357,ui follow uavs thick border map ui bar map attached image click stop follow perform functionality uavs map refer freditbar class implementation example,0
+ST-282,add component emergency operation call map view operation add button call follow select uavs map view uavs map uav select button follow select uavs disabled uav select button enable click follow select uavs automatically zoom pan map select uavs rectangle bound select uavs center map constitute view click view uavs zoom pan map uavs plan route rectangle bound uavs plan route center map constitute view,0
+ST-247,map past flight path uav cover uav show dotted line flight route uav go cover show regular line,0
+ST-304,apply icon line map default uavs use drone icon png flight route line color select uavs uavs checkbox check use drone icon select png change line color focused uav uav user click use drone icon focus png chagne line color d,0
+ST-226,mouse click waypoint instead remove directly window waypoint include information lat lon altitude approach speed button say remove waypoint click button remove waypoint,0
+ST-176,click line connect exist waypoint new waypoint add waypoint,0
+ST-281,new route assign uav automatically map register uavs plan route rectangle bound uavs plan route visible center map zoom map register uavs plan path constitute map,0
+ST-337,implement reorder functionality specify mockup file read callout note mockup file,0
+ST-286,work position class comfortable enable position class distance function provide class motivate abstract base class class method laser distance take wgs position return double travel distance take wgs position return double tonvector return nvector topvector return pvector tollacoordinate return llacoordinate torotmatrix return matrix displacement vector ecef rotate ned vector,0
+ST-232,currently ui refreshing rate update drone info hard code ms create field configuration file configurable,0

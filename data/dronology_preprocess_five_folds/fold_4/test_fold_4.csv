@@ -1,0 +1,76 @@
+issueid,STR.REQ,class
+RE-746,gcs report newly connect uavs gcsmiddleware,1
+RE-702,new monitoring message receive dronologyruntimemonitor forward message subscribe client,1
+RE-701,dronologyruntimemonitor provide functionality retrieve monitor message distribute client,1
+RE-649,route assign remove uav routeassignmentui notify dronology,1
+RE-646,routeassignmentui provide mean select exist route assign uav,1
+RE-639,uimiddleware accept activate mission plan request,1
+RE-626,uimiddleware provide list active uavs,1
+RE-555,uav pende flight plan reach final waypoint current flight plan singleuavflightplanscheduler notify uav hover place,1
+RE-549,route contain specific uav d singleuavflightplanscheduler assign route give uav,1
+RE-547,request singleuavflightplanscheduler schedule route execution,1
+RE-521,hover place command issue flightmanager halt uav place maintain current position,1
+RE-505,flightroutemanag persist flight route,1
+RE-503,flightroutemanag ensure flight route represent valid flight route,1
+RE-161,uavactivationmanager activate uavs register,1
+RE-103,uav s current flight cancel singleuavflightplanscheduler turn cancel schedule flight plan uav,1
+RE-101,uav pende flight plan reach final waypoint current flight plan singleuavflightplanscheduler execute assign flight plan,1
+RE-80,flight plan execute vehiclecore send waypoint uav,1
+RE-77,waypoint specify coordinate include longitude latitude altitude,1
+RE-36,uavactivationmanager ensure instance register drone active time,1
+RE-25,vehiclecore assign unique d activate uav,1
+DD-762,user attempt create route provide save route,0
+DD-761,display active flight plan include time flight travel distance remain distance complete total waypoint,0
+DD-750,uav reconnect timeout reach connection uav reestablish gcs send uav timeout message contain uav d gcsmiddleware,0
+DD-748,gcs receive notification uav incorrectly register gcs close connection uav,0
+DD-735,takeoff command specify target altitude,0
+DD-727,gcsmiddleware able handle send setmonitoringfrequency command respective gcs contain desire frequency ms,0
+DD-713,gcs connect gcsmiddleware identify unique groundstation d,0
+DD-712,gcsmiddleware accept connection gcs,0
+DD-710,gcsmiddleware specify predefined gcs port gcs connect,0
+DD-699,uav s battery level drop predefined threshold uav health indicator activate,0
+DD-692,operation include rtl takeoff hover place resend command,0
+DD-675,consecutive waypoint route map connect line,0
+DD-673,routecreationui support route creation modification tabular mode display editable table show waypoint velocity uav approach waypoint,0
+DD-648,route assign select uav mouse drag drop double clicking route,0
+DD-644,issue command uav vaadinui request control uimiddleware,0
+DD-627,uimiddleware return list uav proxy object contain information active uavs include location battery level ground speed health status,0
+DD-625,heartbeat fail client hold control lock client heartbeat time uimiddleware release control lock,0
+DD-621,client register uimiddleware unique d,0
+DD-613,flight plan execute log event create include route uav assign execution time stamp,0
+CO-610,provide capability log uav relate event assign flight execute mission,0
+DD-605,give takeoff command nvecsimulator infinite acceleration uav takeoff altitude correspond current longitude latitude,0
+DD-602,give land command internalsimulator immediately change uav s current altitude ground altitude,0
+DD-600,give goto command internalsimulator compute coordinate base angle travel step size,0
+DD-584,receive new activation request gcs middleware uavactivationmanager check present uav d represent currently register non activate uav,0
+DD-579,uav air state receive command land transition land state,0
+DD-572,activation request uav receive gcs middleware accept uav provide d unique currently activate uavs,0
+DD-571,virtual physical drone associate predefined uav type define basic attribute,0
+CO-570,core component manage different type uavs,0
+DD-565,objectavoidance retrieve uav property check directive,0
+DD-559,flight plan abort remove associated uav,0
+DD-553,uav issue return home command flight current flight plan abort schedule flight plan remove flight plan queue,0
+DD-537,flight plan uavs synchronize insert share synchronization point order list flight route assign participate uav,0
+DD-526,hover place command rescind uav s state revert previous state,0
+DD-502,flight route specify standard xml flightroute format,0
+DD-500,mode change message user control receive vehicle transition user control,0
+CO-477,single uav flight plan assignment take exist route instantiate assign uav,0
+CO-474,provide basic flight relate capability uavs,0
+DD-213,command send message receive cgc log dedicated gcs log file,0
+CO-184,internal simulator provide low fidelity feature support quick initial test virtual uav feature include takeoff goto land battery health,0
+DD-121,uav location update map currently define ui uav refresh rate,0
+DD-117,scale information provide configuration map display scale map default scale,0
+CO-91,python base manage control uavs communicate dronology ground station middleware gcs responsible communicate directly uav send command monitor state include current position flight mode health,0
+DD-84,default pende flight plansof uav s service fcfs order,0
+DD-26,uav initially activate ground ground state,0
+DD-20,client register uimiddleware receive notification new flight plan activate execute,0
+DD-18,client register uimiddleware receive uav type specification event new uav type specification create modify delete,0
+DD-11,client register uimiddleware receive flight route event notification flight route create modify delete,0
+ST-347,implement edit delete function button route list attach behave popup window delete etc button route information bar,0
+ST-403,click follow mode button screen zoom drone user able zoom choosing,0
+ST-173,user click map new waypoint create show map list newly add waypoint line add new previous,0
+ST-211,table editable,0
+ST-373,add route description route meta info bar double clicking route description change textfield edit similar behavior field create new route add text area add route description,0
+ST-384,user attempt assign route uav try route right panel left prevent route assign popup notification say waypoint define route assign route uav,0
+ST-261,function wgs position current position target position number meter travel return new wgs position specified distance away,0
+ST-278,nvecinterpolator position reckon wgs replacement simulator use need create movement simulator battery simulator replicate base functionality simple simulator,0

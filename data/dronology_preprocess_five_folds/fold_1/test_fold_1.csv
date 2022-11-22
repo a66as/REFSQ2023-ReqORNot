@@ -1,0 +1,77 @@
+issueid,STR.REQ,class
+RE-741,gcs assign message frequency uavs,1
+RE-689,realtimeflightui display currently active flight plan map,1
+RE-681,realtimeflightui display status currently activate uavs,1
+RE-670,request routecreationui send newly create modify route dronology,1
+RE-616,activitylogger log command send message receive cgs,1
+RE-587,uav deactivate uavactivationmanager cancel current schedule flight plan,1
+RE-558,request singleuavflightplanscheduler abort currently execute flight plan uav,1
+RE-523,flight route assign uav currently hover place flightmanager assign route maintain hover place mode,1
+RE-517,give coordinate coordinatesystem compute direction coordinate second coordinate,1
+RE-501,flightroutemanag define flight route order sequence waypoint waypoint represent target location final waypoint represent final target location,1
+RE-235,gcs lose connection uav gcs attempt reconnect,1
+RE-127,uav active onboard obstacle avoidance obstacleavoidance issue directive,1
+RE-124,stationary move object proximity uav objectavoidance issue evasive directive uav,1
+RE-120,realtimeflightui display location active uavs icon map,1
+RE-108,uimiddleware provide interface register ui client,1
+RE-100,request singleuavflightplanscheduler unassign flight plan assign uav await execution,1
+RE-86,singleuavflightplanscheduler maintain manage list pende flight plan uav,1
+RE-38,vehiclecore associate uav type uav define basic attribute,1
+RE-28,singleuavflightplanscheduler execute flight plan time uav,1
+RE-9,client register notification uimiddleware send notification specific event,1
+CO-765,provide map functionality display route uavs leverage shelf map provider osm google map,0
+DD-747,gcs send home location time stamp uav d gcsmiddleware,0
+DD-744,message frequency define unit second,0
+DD-743,default message frequency uav state message uav message state frequency,0
+DD-716,step gcs announce current set recognize uavs gcsmiddleware,0
+DD-707,monitoring message contain hierarchical identifier describe topic message type timestamp arbitrary serializeable datum attach message,0
+DD-688,ui periodically request current location register uavs uimiddleware update location map,0
+DD-687,activate uav ui display information uav e longitude latitude altitude groud speed battery level etc,0
+DD-685,map load active uavs list obtain uirealtimeflightview display icon map register uav base current location,0
+DD-678,user press route delete button confirmation message display confirm user route delete,0
+DD-665,waypoint color update flight route edit e g new waypoint add current edit cancel color reset reflect current waypoint,0
+DD-661,user press cancel pende flight plan button request send ui middleware cancel flight,0
+DD-657,flight plan assign uav execute reorder drag route list assign route new position,0
+DD-652,detailed information request user uav ui request uav data object uimiddleware,0
+DD-629,uimiddleware retrieve return list previously save flight route,0
+DD-623,ui middleware forward control request ui client release control lock uav,0
+DD-622,uimiddleware forward control request ui client hold control lock uav,0
+DD-619,log level hw trace active state monitoring message log,0
+DD-617,command send gcs gcs middleware log,0
+DD-614,uav reach waypoint execute flight plan log event create include coordinate waypoint uav flight plan assign flight plan d timestamp,0
+DD-612,flight plan initiate log event create include route uav assign initiation time stamp,0
+CO-591,provide capability register uavs e provide meta datum uav payload wingspan equipment,0
+DD-590,maximum number activate uavs define max uav,0
+DD-583,present uav d represent currently activate uav gcs middleware notify additional activation perform,0
+CO-582,provide capability activating deactivate virtual physical uavs dronology,0
+DD-573,internally simulated uav instantiate d unique ids currently activate uavs,0
+DD-561,flight plan abort uav switch hover place mode,0
+DD-554,flight plan queue uav reach final waypoint current flight plan flight plan remove queue set currently execute flight plan,0
+DD-550,flight plan assign specific uav place uav s execution queue,0
+DD-538,uav execute flight plan reach synchronization point wait proceed uavs share synchronization point reach point,0
+DD-536,individual uav include missionplan order list flight route assign,0
+DD-529,compute distance uav target waypoint threshold waypoint distance waypoint consider reach,0
+DD-528,vehiclecore receive uav s current coordinate uav assign target waypoint vehiclecore compute current distance target waypoint,0
+DD-527,start flight plan send target waypoint uav s gcs,0
+DD-524,uav hover place mode waypoint directive uav send gcs,0
+DD-520,uav command return home current flight plan remove new flight plan create contain single waypoint represent original launch coordinate,0
+DD-515,request coordinate transform p vector default representation,0
+DD-513,request coordinatesystem transform coordinate default representation p vector,0
+DD-506,flight route upload dronology flightroutemanag save unique xml file,0
+CO-480,provide capability create execute complex flight patter multiple uavs,0
+CO-476,provide capability execute mission multiple uavs,0
+CO-472,provide capability create manage flight route dronology,0
+DD-468,missionplanner provide interface support execution predefined mission specify json,0
+DD-362,missionplanner synchronize coordinate flight multiple uavs,0
+DD-352,route assign uav request send uimiddleware update assignment dronology,0
+DD-118,load map scale specify configuration,0
+DD-32,uav taking state achieve target altitude transition fly state,0
+DD-22,client register uimiddleware receive notification unexpected event occur,0
+DD-21,client register uimiddleware receive notification uav instance activate deactivate,0
+ST-396,check user input altitude speed place popup window create new waypoint table edit mode save button popup window check mark button table click input altitude speed float number popup notification say altitude transit speed number save input value,0
+ST-334,create assign route layout base mockup file attach read callout note mockup file,0
+ST-336,implement select route behavior ignore note mockup file use select route left hand list automatically select match route right hand route map select route right hand auto select route left hand,0
+ST-335,implement assign remove functionality base mockup file read callout note mockup file,0
+ST-260,haversine distance acceptable method computing distance compare travel distance laser distance travel distance distance drone actually travel account shape earth assume change altitude gradual laser distance distance laser beam travel assume line sight compute distance laser need travel earth example point north pole point b south pole laser distance tell distance straight earth,0
+ST-179,need immutable class hold double x y z wgs reference frame background information wgs reference frame origin frame center mass earth x axis point equator meet prime meridean latitude longitude z axis point geographic north pole latitude longitude undefine y axis derive right hand rule point latitude longitude class follow instance field x position x axis meter y position y axis meter z position z axis meter class follow method tolla take argument return latitude longitude altitude position tonvec take argument return n vector plus altitude position,0
+ST-132,follow example create singleton class ui parameter search java singleton singleton example current parameter include project map center lan map center lon map default zoom future use class configurable parameter,0

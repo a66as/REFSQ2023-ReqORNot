@@ -1,0 +1,77 @@
+issueid,STR.REQ,class
+RE-754,gcs transmit uav s property gcsmiddleware,1
+RE-739,gcs receive uav command gcsmiddleware gcs forward command respective uav,1
+RE-709,gcsmiddleware handle multiple gcs,1
+RE-698,realtimeflightui notify user emergency occur,1
+RE-668,route include unique d textual description set waypoint editable ui,1
+RE-664,routecreationui distinguish start end intermediate waypoint marker,1
+RE-655,uav select routeassignmentui display active flight plan,1
+RE-643,load map view position pre define location,1
+RE-637,uimiddleware enable exist route assign active uav,1
+RE-634,uimiddleware enable creation modification flight route,1
+RE-595,give goto command internalsimulator update location uav increment simulation step size meter move target destination destination reach,1
+RE-589,maximum number allow activate uavs reach uavactivationmanager reject activation request,1
+RE-563,group uavs assign flight pattern mission provide warning path overlap,1
+RE-551,schedule flight manually assign uav singleuavflightplanscheduler assign route automatically uav,1
+RE-508,flight route require customize takeoff altitude differ s default takeoff altitude specify flight route,1
+RE-126,objectavoidance issue command capability uav,1
+RE-125,uav take evasive action ensure eventually reach destination,1
+RE-114,realtimeflightui load map display,1
+RE-110,uimiddleware assign control client time uav,1
+RE-8,request vehiclecore transition uav state accord allow state transition depict uav state transition diagram,1
+DD-760,active flight plan display list pende flight plan,0
+DD-753,gcs send uav s current coordinate gcsmiddleware receive uav,0
+DD-742,default message frequency uav monitoring message uav message mon frequency,0
+DD-719,gcs inform result activation request,0
+DD-705,dronologyruntimemonitor provide mean define wildcard e client receive message topic associate wildcard,0
+DD-703,client able subscribe number topic,0
+CO-700,provide basic data collection capability internal datum dronology assign flight datum provide uav e g location datum status,0
+DD-694,request user ui apply request emergency action select uavs uav select ui apply emergency action uavs default,0
+DD-676,select user multiple route display simultaneously map,0
+DD-674,routecreationui support route creation modification visual mode allow user click location order create modify delete waypoint,0
+CO-663,provide capability create new flight route map store dronology,0
+DD-660,uav cancel pende flight plan button associate,0
+DD-654,user request view flight plan assign uav ui request pende flight plan uav flightinfo object display,0
+DD-650,route assignment remove uav request send uimiddleware remove assignment dronology,0
+DD-636,request ui client uimiddleware support modification exist flight route give d,0
+DD-635,request ui client uimiddleware create new flight route unique d,0
+DD-633,uimiddleware accept return home command associate unique uav d forward dronology,0
+DD-632,uimiddleware accept takeoff command associate unique uav d forward dronology,0
+DD-618,connection request handshake mode change message log,0
+DD-609,simulated uav flight nvecsimulator reduce battery second simulator battery drain volt,0
+DD-607,respond goto command nvecsimulator continue move step target coordinate target reach,0
+DD-603,simulated uav flight internalsimulator reduce battery second simulator battery drain volt,0
+DD-601,respond goto command internalsimulator continue move step target coordinate target reach,0
+DD-585,present uav d represent currently register uav uavactivationmanager reject activation notify gcs middleware,0
+DD-580,uav land state reach zero altitude transition ground,0
+DD-575,vehiclecore support uavs capable receive respond command send ground control station,0
+DD-564,uav receive evasive directive long close proximity object objectavoidance stop send directive uav continue destination,0
+DD-560,aborted flight plan reassign uav,0
+DD-556,currently execute flight plan d associate uav execute,0
+DD-543,flightpattern synchronize takeoff direct uav takeoff unique altitude synchronize uavs fly unique altitude longitude latitude waypoint subsequent route synchronize uavs descend ascend target waypoint synchronize uavs complete flight pattern,0
+DD-542,predefined flightpattern include missionplan expand prior use set waypoint synchronization point participate uavs,0
+DD-540,missionplan specify json file attach example,0
+DD-534,takeoff altitude prescribe flight plan assign uav currently ground wide default altitude target takeoff altitude,0
+DD-533,takeoff altitude prescribe flight plan assign uav currently ground altitude target takeoff altitude,0
+DD-530,uav reach target waypoint additional waypoint specify flight plan vehiclecore send waypoint uav s gcs,0
+DD-519,direction coordinate specify velocity vector coordinate,0
+DD-511,default coordinate representation use lla longitude latitude altitude format,0
+DD-504,receipt new modified flight route ui middleware flightroutemanag check valid flight route e waypoint valid coordinate flight route contain waypoint,0
+CO-481,collision avoidance api general service,0
+DD-445,dronologyruntimemonitor allow publish arbitrary monitoring message subscribe certain message type,0
+DD-421,waypoint flight route color differentiate starting waypoint end waypoint remain intermediate waypoint,0
+CO-105,manage aspect display flight uavs real time interact flight view display active route uav coordinate current health map use zoom pan feature follow select uav,0
+DD-104,flight plan execute waypoint reach log dedicated flight log file,0
+DD-85,pende flight plan uav reorder,0
+DD-19,client register uimiddleware receive notification new uav type configuration create modify delete,0
+ST-208,create emergency operation button specify mockup,0
+ST-305,connect return home button uav dronology button click popup modal window saying sure send uav home button yes clicking yes send uav home click simply close window emergency operation uav select click uavs return home popup modal window saying sure send uavs home click yes send uavs home select uavs change text button select uavs return home click popup modal window saying sure send uav uav uav n home send select uavs home user click yes,0
+ST-346,delete button bar route map click popup modal window saying sure delete route route include button yes click yes remove route dronology close window update ui click simply close window edit mode route delete remember exit edit mode delete route,0
+ST-169,user request new flight route create add new route button click modal window pop ask user input new route button display window cancel cancel add route draw route add new route auto select route enter editing mode,0
+ST-175,exist waypoint select map drag location,0
+ST-174,waypoint remove route waypoint list waypoint previous waypoint final waypoint waypoint list waypoint waypoint starting waypoint waypoint list waypoint previous waypoint connect waypoint,0
+ST-246,assign new route button click modal window occupy screen window frmainlayout button beneath frmainlayout cancel apply click cancel user send active flight view route select apply button disabled route select enable apply button click apply button popup modal window confirmation window saying sure want uav follow route route click yes assign route uav close modal window click user send route planning modal window,0
+ST-228,route click list change background list indicate select load waypoint map table,0
+ST-262,replace exist coordinate implementation new llacoordinate require update flight simulator work double value instead long ui adaptation display coordinate correctly additional functionality modify waypoint llacoordinate immutable,0
+ST-259,latitude need calculate atan equation,0
+ST-178,need immutable class hold double latitude longitude altitude lla class follow data member latitude angle north equator degree negative angle define latitude southern hemisphere longitude angle east prime meridian degree negative angle define longitude western hemisphere altitude distance sea level precisely distance surface wgs reference ellipsoid project need distance meter traditionally aviation distance measure foot careful class class follow method topvec take argument map lla x y z coordinate wgs reference frame tonvec take argument map lla coordinate define n vector plus altitude n vector normal vector surface wgs reference ellipsoid ellipsoid define position sea level earth pair altitude precisely define position n vector nice property dead reckoning easy accurate dead reckoning process calculate drone current position previously determined position advance position base know estimate speed elapse time course info learn nice property n vector article journal navigation coordinate java modify llacoordinate class need,0

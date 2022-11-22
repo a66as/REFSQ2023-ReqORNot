@@ -1,0 +1,76 @@
+issueid,STR.REQ,class
+RE-766,The MapComponent shall support different types of map layers e g terrain satellite,1
+RE-759,The MissionPlanner shall execute flight plans for multiple UAVs concurrently,1
+RE-751,The GCS shall transmit the UAV s current location to the GCSMiddleware,1
+RE-736,When the connection to the GCS from the GCSMiddleware is lost the GCSMiddleware shall notify Dronology and deactivate all associated UAVs,1
+RE-729,The GCSMiddleware shall forward commands sent from Dronology to a GCS,1
+RE-722,The GCSMiddleware shall handle state messages monitoring messages and mode change messages received from an GCS,1
+RE-691,The RealTimeFlightUI shall allow users to apply flight operations to one or more selected UAVs,1
+RE-666,The RouteCreationUI shall only accept valid altitude and speed values for waypoint,1
+RE-656,A user may reorder routes or remove flight plans assigned to a UAV as long as the flight has not started execution,1
+RE-630,The UIMiddleware accepts commands from UIs and forwards to Dronology,1
+RE-628,The UIMiddleware shall provide a list of all existing routes,1
+RE-611,The ActivityLogger shall log all flight plan related events,1
+RE-596,When given a landing command the InternalSimulator shall move the UAV from to the ground altitude corresponding to its current longitude and latitude,1
+RE-594,When given a takeoff command the InternalSimulator shall move the UAV to the takeoff altitude corresponding to its current longitude and latitude,1
+RE-562,A flight pattern shall document the longitude latitude and altitude of waypoints in a flight route as offsets from the starting position of the UAV,1
+RE-525,If a flight plan is active and the hover in place command is rescinded the FlightManager shall notify the UAV to continue to the originally designated waypoint,1
+RE-516,When given two coordinates the CoordinateSystem shall compute the distance between them,1
+RE-424,When the return to home command is issued the FlightManager shall return the UAV to its original launch location without issuing any additional waypoint or routing commands,1
+RE-160,When a GCS requests activation of a newly detected UAV the GCSMiddleware shall forward the request to Dronology,1
+DD-768,Each movement command shall specify one of the following command types SET MONITORING FREQUENCY SET STATE FREQUENCY,0
+DD-767,The RouteCreationUI shall provide capabilities to modify existing routes,0
+DD-757,The properties that the GCS sends to the GCSMiddleware shall be defined in JSON,0
+DD-756,The GCS shall send the UAV s current properties to the GCSMiddleware when they are received from the UAV,0
+DD-749,If the connection to an UAV is lost and the GCS fails to reconnect the GCS shall notify the GCSMiddleware,0
+DD-745,When the GCS receives a set frequency command from the GCSMiddleware it shall adjust its messange frequency accordingly,0
+DD-734,The SET VELOCITY shall specify a velocity vector specified using NED North East Down directions,0
+DD-733,The SET GROUNDSPEED command shall specify ground speed in meters per second,0
+DD-721,When the activation request is denied the GCSMiddleware shall send a predefined activation denied message to the GCS,0
+DD-720,When the activation request is approved the GCSMiddleware shall send a predefined activation confirmation message to the GCS,0
+DD-718,The GCSMiddleware shall call the UAVActivationManager to request UAV activation,0
+DD-711,The GCSMiddleware shall accept connections with multiple GCS,0
+DD-696,When UI follow mode is initiated the map shall automatically zoom and pan so that all selected UAVs are centered and their active routes constitutes of the view,0
+DD-690,The UI shall differentiate between completed current and not yet traversed flight segments,0
+DD-683,The UI shall periodically request the list of all activated UAVs from the UIMiddleware and updates the display of currently activated UAVs,0
+DD-669,The UI shall provide respective fields for displaying and modifying the ID textual description waypoints and other route information,0
+DD-658,Flight plans assigned to an UAV that have not yet been executed may be deleted by selecting the route and clicking the deselect button,0
+CO-641,User interface for managing UAVs routes and planning flights,0
+DD-640,The UIMiddleware shall forward a mission plan request to dronology,0
+DD-638,The UIMiddleware shall assign the list of waypoints from a route to an active UAV in order to create a flight plan,0
+DD-631,The UIMiddleware accepts hover in place commands associated with a unique UAV ID and forwards to Dronology,0
+CO-620,Provides capabilities for connecting to multiple GCS sending commands to and receiving messages from UAVs,0
+DD-615,The timestamp and the type of action shall be logged into the mission log for each flight plan related event This includes time of scheduling time of execution time of completing plan reordering plan canceling plan,0
+DD-588,When a UAV is deactivated all scheduled flight plans shall be removed from the UAV s flightplan pool,0
+DD-578,When a UAV is IN AIR state and is assigned a flight plan to execute it transitions to FLYING,0
+DD-577,The system shall support internally simulated UAVs,0
+DD-568,The ObjectAvoidance system shall compute pair wise distances between UAVs,0
+DD-567,The ObjectAvoidance system shall maintain a list of UAV states,0
+DD-552,If a flight plan is not assigned to a specific UAV the flight plan scheduler shall automatically assign it to the next available UAV,0
+DD-548,When a flight route is scheduled for execution its waypoints takeoff altitude and identifier shall be used to instantiate a new flight plan,0
+DD-546,When requested by the user a currently executing mission plan shall be cancelled by removing all pending flight plans and removing all synchronization points,0
+DD-544,The FlightPattern for synchronized landing shall direct each UAV to synchronize at the final waypoint of the preceding route ascend or descend to a unique altitude synchronize fly to the longitude and latitude of the home coordinates synchronize and then descend to the landing altitude,0
+DD-522,When the UAV is commanded to hover in place its state is changed to hover in place and a command is sent to the GCS,0
+DD-518,Distances computed between two coordinates shall be accurate within meter over a distance of meters,0
+DD-512,When requested the CoordinateSystem shall transform coordinates transformed from the default representation to n vectors,0
+CO-473,Provides dimensional coordinate system currently based on longitude latitude and altitude Provides conversion between various coordinate systems,0
+DD-361,In step one the GCS announces itself to the GCSMiddleware providing its unique ID,0
+DD-168,Upon loading the UI requests all existing routes from the UIMiddleware Once the UIMiddleware respond to the request the UI displays all existing routes,0
+DD-113,The name state battery level speed and current coordinates of each UAV shall be displayed,0
+CO-90,Handles connections between Dronology and Ground Control Stations GCS Forwards commands monitoring and other messages from Dronology to its registered GCS and passes messages describing the state of the UAVs managed by each GCS back to dronology,0
+DD-87,A flight plan shall be unassigned from a UAV by removing it from the UAV s flight plan queue,0
+DD-81,If the flight plan queue is empty when the UAV reaches the final waypoint of its current flight plan then its state is set to IN AIR,0
+DD-31,When permission is granted to UAV in the AWAITING TAKEOFF CLEARANCE state it transitions to TAKING OFF state,0
+DD-27,Each UAV has zero or more pending flight plans,0
+ST-210,Use the enableRouteEditing and disableRouteEditing methods in the MapRouteUtility class When the edit button is clicked the map and the table enter edit mode A thicker border is shown around the map and table to indicate edit mode see mockup Two buttons are added on top of the map table area Save and Cancel In the edit mode users can create new waypoints move waypoints remove waypoints etc When the edit mode is not activated disable these editing functionalities Clicking the Save button will send the current waypoints data to dronology and exit the edit mode Clicking the Cancel button will undo all changes fetch the data from dronology again and exit the edit mode,0
+ST-358,In the following mode selecting new UAVs will add them to the group of UAVs that is currently following unselecting UAVs will remove them from the group Update the indicator bar accordingly as well When the last UAV is unselected zoom out to show all UAVs i e perform the function same as Show all UAVs on the map,0
+ST-357,When the UI is following one or more UAVs show a thick border around the map and a UI bar on top of the map see the attached image Clicking on Stop Following will perform the same functionality as Show all UAVs on the map Refer to the FREditBar class for an implementation example,0
+ST-282,Add a component above Emergency Operations called Map View Operations Add two button in it called Follow Selected UAVs on Map and View All UAVs on Map When no UAV is selected the button Follow Selected UAVs is disabled once a UAV is selected the button is enabled Clicking on Follow Selected UAVs will automatically zoom and pan the map so that all selected UAVs or rather the rectangle that bounds all selected UAVs are always centered in the map and constitutes for about of the view Clicking on View All UAVs will zoom and pan the map so that all UAVs and their planned routes or rather the rectangle that bounds all UAVs and their planned routes are centered in the map and constitutes for about of the view,0
+ST-247,In the map the past flight path that the UAV has already covered behind the UAV is shown in dotted lines The flight route that the UAV is going to cover is shown in regular lines,0
+ST-304,This only applies to the icons and lines on the map By default all UAVs use drone icon png all flight route lines are in color For selected UAVs UAVs with the checkbox checked use drone icon selected png and change the line color to For the focused UAV the UAV that the user clicks on use drone icon focused png and chagne the line color to d,0
+ST-226,When mouse click on the waypoint instead of removing it directly show a Window next to the waypoint that includes its information lat lon altitude and approaching speed and a button says remove waypoint clicking on the button will remove the waypoint,0
+ST-176,By clicking on a line connecting existing waypoints a new waypoint is added in between these waypoints,0
+ST-281,When a new route is assigned to a UAV automatically move the map so that all registered UAVs and their planned routes or rather the rectangle that bounds all UAVs and their planned routes are visible in the center of the map also zoom the map so that all registered UAVs and their planned paths constitutes about of the map,0
+ST-337,Implement the move reorder functionality specified in the mockup file Please read the callout notes on the mockup file,0
+ST-286,Everyone should get to work with the position class that they are most comfortable with And to enable everyone to get the most out of the position classes distance functions should be provided to all classes That is what motivates this abstract base class The class should have these methods laser Distance that takes another WGS position returns a double travel distance that takes another WGS position returns a double toNvector returns an NVector toPVector returns a PVector toLlaCoordinate returns an LlaCoordinate toRotMatrix returns a matrix that can take displacement vectors from ECEF and rotate them into NED vectors,0
+ST-232,Currently the UI refreshing rate to update drone info is hard coded as once per ms Create a field in the configuration file and make it configurable,0
