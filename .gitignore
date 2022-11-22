@@ -1,18 +1,4 @@
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
 **/.ipynb_checkpoints/
-**/models/DL_models/BERT_base_uncased/
-**/models/DL_models/pBERT_base_cased/
-**/models/DL_models/XLNet_base/
-**/models/DL_models/pXLNet_base/
-**/models/DL_models/DisBERT_base_cased/
-**/models/DL_models/pDisBERT_base_cased/
-**/models/DL_models/SciBERT_uncased/
-**/models/DL_models/pSciBERT_uncased/
-**/models/DL_models/pRoBERTa_base/
-**/models/DL_models/RoBERTa_base/
-**/models/DL_models/DisBERT_base_uncased/
-**/models/DL_models/pDisBERT_base_uncased/
-**/models/DL_models/pXRBERT_base/
-**/models/DL_models/XRBERT_base/
 
