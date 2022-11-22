@@ -3,7 +3,7 @@ This repository contains the replication package for the paper "Requirement or n
 Please cite the original paper. (Expected updates on Nov 23, 2022)
 
 ## Tool
-The best model---BERT base uncased---trained on the public dataset is deployed [here](https://www.smartdelta.org/rornot). (Tool to be available after our AWS account gets verified. Verification expected on Nov 30, 2022)
+(A link to the running Tool will be available after our AWS account gets verified. Verification expected on Nov 30, 2022)
 
 ## Replication Package
 - [REFSQ23_results.xlsx](/REFSQ23_results.xlsx) contains the obtained results of our experiments.
@@ -12,7 +12,13 @@ The best model---BERT base uncased---trained on the public dataset is deployed [
 - [data](/data) contains the generated stratified five folds from the original Dronology dataset both with and without pre-processing. These folds are used for cross-validation of all the pipelines.
 
 ## How to run?
-1. Clone the repository and download the....
+1. Clone the repository
+2. Download (from [here]() and [here](https://doi.org/10.5281/zenodo.7347716)) and unzip the additional material  in the `models` directory
+3. Create a virtual environment with Python `3.8.10` and install the `requirements.txt` using `pip install -r requirements.txt`
+4. Run the Jupyter Notebook `RorNot_Pipelines.ipynb`
+
+## Cite as
+To be updated.
 
 ## Funding
 This work is partially funded by the [AIDOaRt (KDT)](https://sites.mdu.se/aidoart) and [SmartDelta (ITEA)](https://itea4.org/project/smartdelta.html) projects.
