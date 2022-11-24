@@ -1,0 +1,14 @@
+jupyter==1.0.0 
+numpy==1.23.3
+pandas==1.4.4
+scikit-learn==0.23.2
+torch==1.12.1
+tokenizers==0.12.1
+transformers==4.21.2
+keras==2.9.0
+tensorflow-gpu==2.9.1      
+sentence-transformers==2.2.2
+datasets==2.3.2
+gensim==3.8.3
+wget==3.2
+glove-python-binary==0.2.0
