@@ -3,7 +3,7 @@ This repository contains the replication package for the paper "Requirement or n
 Please cite the original paper.
 
 ## Tool
-(A running tool link will be available after our AWS account gets verified. Verification expected on Dec 04, 2022)
+A running tool with the best model---BERT uncased---is available [here](https://huggingface.co/spaces/SarmadBashir/REFSQ2023_ReqORNot_demo_app).
 
 ## Replication Package
 - [REFSQ23_results.xlsx](/REFSQ23_results.xlsx) contains the obtained results of our experiments.
