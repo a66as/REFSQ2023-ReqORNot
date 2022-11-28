@@ -1,9 +1,9 @@
 # Requirement or not, that is the question!
 This repository contains the replication package for the paper "Requirement or not, that is the question: A case from the railway industry".
-Please cite the original paper. (Expected updates: Nov 23, 2022)
+Please cite the original paper.
 
 ## Tool
-(A running tool link will be available after our AWS account gets verified. Verification expected on Nov 30, 2022)
+(A running tool link will be available after our AWS account gets verified. Verification expected on Dec 04, 2022)
 
 ## Replication Package
 - [REFSQ23_results.xlsx](/REFSQ23_results.xlsx) contains the obtained results of our experiments.
