@@ -18,7 +18,8 @@ A running tool with the best model---BERT uncased---is available [here](https://
 4. Run the Jupyter Notebook `RorNot_Pipelines.ipynb`
 
 ## Cite as
-`@InProceedings{10.1007/978-3-031-29786-1_8,
+ ```
+@InProceedings{10.1007/978-3-031-29786-1_8,
 	author="Bashir, Sarmad
 	and Abbas, Muhammad
 	and Saadatmand, Mehrdad
@@ -34,8 +35,8 @@ A running tool with the best model---BERT uncased---is available [here](https://
 	address="Cham",
 	pages="105--121",
 	isbn="978-3-031-29786-1"
-}`
-
+}
+ ```
 ## Funding
 This work is partially funded by the [AIDOaRt (KDT)](https://sites.mdu.se/aidoart) and [SmartDelta (ITEA)](https://itea4.org/project/smartdelta.html) projects.
 <br><img src="https://smartdelta.org/wp-content/uploads/2021/12/1500x500_170x60.jpeg" width="100" >
