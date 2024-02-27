@@ -37,6 +37,10 @@ A running tool with the best model---BERT uncased---is available [here](https://
 	isbn="978-3-031-29786-1"
 }
  ```
+OR
+
+Bashir, S., Abbas, M., Saadatmand, M., Enoiu, E.P., Bohlin, M., Lindberg, P. (2023). Requirement or Not, That is the Question: A Case from the Railway Industry. In: Ferrari, A., Penzenstadler, B. (eds) Requirements Engineering: Foundation for Software Quality. REFSQ 2023. Lecture Notes in Computer Science, vol 13975. Springer, Cham. https://doi.org/10.1007/978-3-031-29786-1_8
+
 ## Funding
 This work is partially funded by the [AIDOaRt (KDT)](https://sites.mdu.se/aidoart) and [SmartDelta (ITEA)](https://itea4.org/project/smartdelta.html) projects.
 <br><img src="https://smartdelta.org/wp-content/uploads/2021/12/1500x500_170x60.jpeg" width="100" >
