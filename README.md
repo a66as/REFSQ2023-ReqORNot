@@ -18,7 +18,23 @@ A running tool with the best model---BERT uncased---is available [here](https://
 4. Run the Jupyter Notebook `RorNot_Pipelines.ipynb`
 
 ## Cite as
-To be updated.
+`@InProceedings{10.1007/978-3-031-29786-1_8,
+	author="Bashir, Sarmad
+	and Abbas, Muhammad
+	and Saadatmand, Mehrdad
+	and Enoiu, Eduard Paul
+	and Bohlin, Markus
+	and Lindberg, Pernilla",
+	editor="Ferrari, Alessio
+	and Penzenstadler, Birgit",
+	title="Requirement or Not, That is the Question: A Case from the Railway Industry",
+	booktitle="Requirements Engineering: Foundation for Software Quality",
+	year="2023",
+	publisher="Springer Nature Switzerland",
+	address="Cham",
+	pages="105--121",
+	isbn="978-3-031-29786-1"
+}`
 
 ## Funding
 This work is partially funded by the [AIDOaRt (KDT)](https://sites.mdu.se/aidoart) and [SmartDelta (ITEA)](https://itea4.org/project/smartdelta.html) projects.
